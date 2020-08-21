@@ -1,0 +1,137 @@
+
+div.host{
+  min-width: 300px;
+  width: 100%;
+  margin: 5px;
+  margin-right: 0px;
+}
+
+div.loading{
+  min-width: 300px;
+  width: 100%;
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  margin-right: 0px;
+}
+
+div.loadingModel img {
+  margin: 0 auto;
+}
+
+div.needlogin{
+  min-width: 300px;
+  margin: 5px;
+  margin-right: 0px;
+}
+
+div.menumain{
+  min-width: 300px;
+  text-align: left;
+  width: 100%;
+}
+
+.menumain-list{
+  text-align: left;
+}
+
+.host h1,
+.host h2 {
+	color: #444;
+  	font-family: 'Myriad Pro', 'Helvetica';
+}
+
+.host > ul {
+  	list-style-type: none;
+  	margin-left: 0;
+}
+
+.host h1 {
+  	font-size: 18px;
+  	line-height: 18px;
+}
+
+.host h2 {
+  	font-size: 14px;
+  	line-height: 14px;
+}
+
+.host i {
+  	padding-right: 5px;
+}
+
+.host table {
+    font-size: 14px;
+}
+
+.host .hostnames{
+    color: #999;
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+.host .ports li {
+  	background-color: #77CCD7;
+  	color: white;
+  	float: left;
+  	font-family: Arial;
+  	font-size: 12px;
+  	font-weight: bold;
+  	height: 48px;
+  	margin: 5px;
+  	position: relative;
+  	text-shadow: none;
+  	width: 48px;
+}
+
+.host .ports li > a {
+  background-color: #2d6987;
+  color: white;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+}
+
+.host .ports li > a:hover {
+  background-color: #404040;
+}
+
+.host .ports li span {
+  color: white;
+  height: 34px;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  width: 48px;
+}
+
+.host .ports li a > span:hover {
+  text-decoration: underline;
+}
+
+.host table td,
+.host table th {
+  line-height: 8px;
+}
+
+.host #vulns ul {
+	margin-top: 5px;
+}
+
+.host #vulns ul li {
+	list-style-type: none;
+	margin-left: -20px;
+}
+
+.host #vulns a {
+	color: black;
+	text-decoration: none;
+}
+
+.host #vulns a:hover {
+	text-decoration: underline;
+}
+
+.host #vulns img {
+	width: 28px;
+}

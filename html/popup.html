@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <script src="/js/popup.js"></script>
+    <script src="/js/jquery-3.4.1.js"></script>
+    <script src="/js/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="/css/css/bootstrap.css">
+    <link rel="stylesheet" href="https://static.shodan.io/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/popup.css">
+</head>
+<body style="overflow: visible;">
+	<div class="btn-group-vertical menumain" role="group">	
+	    <div class="btn-group" role="group">
+	      <button id="btnGroupVerticalDrop1" type="button" class="btn btn-secondary dropdown-toggle menumain-list" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	        Copy a ip
+	      </button>
+	      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1" style="">
+	      	<button type="button" class="btn btn-secondary menumain-list dropdown-item copy-button" id="copyoneip">Copy a ip</button>
+	    	<button type="button" class="btn btn-secondary menumain-list dropdown-item copy-button" id="copyoneipwp">Copy a ip with port</button>
+	    	<button type="button" class="btn btn-secondary menumain-list dropdown-item copy-button" id="copyoneurl">Copy a ip with url</button>	
+	      </div>
+	    </div>
+	    <div class="btn-group" role="group">
+	      <button id="btnGroupVerticalDrop1" type="button" class="btn btn-secondary dropdown-toggle menumain-list" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	        Copy all ip
+	      </button>
+	      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1" style="">
+	      	<button type="button" class="btn btn-secondary menumain-list dropdown-item copy-button" id="copyallip">Copy all ip</button>
+		    <button type="button" class="btn btn-secondary menumain-list dropdown-item copy-button" id="copyallipwp">Copy all ip with port</button>
+		    <button type="button" class="btn btn-secondary menumain-list dropdown-item copy-button" id="copyallipwplf">Copy all ip with port by LF</button>
+		    <button type="button" class="btn btn-secondary menumain-list dropdown-item copy-button" id="copyallurl">Copy all url with url</button>
+	      </div>
+	    </div>
+  	</div>
+  	<div class="btn-group-vertical loading" id="loading"  style="display: none">
+	    <img src="/img/loading.gif" style="margin: 0 auto;">
+	</div>
+	<div class='host' style='padding:5px 0 10px;border-top:1px solid #eee;'>
+		<h1 class=".text-black-50"><i class='icon-globe'></i><span id='ip'>0.0.0.0</span></h1>
+		<div class='hostnames' id='hostnames'></div>
+		<div class="layui-card" id="ipInfo">
+			<table class="table table-borderless">
+			  <tbody>
+			    <tr>
+			      <th scope="row">Country:</th>
+			      <td id="country"></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">Port:</th>
+			      <td id="port"></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">Protocol:</th>
+			      <td id="protocol"></td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
+		<div style='padding:5px 0 10px;border-top:1px solid #eee;' class="hostInfo">
+			<table class="table table-striped">
+			  <thead>
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">Port</th>
+			      <th scope="col">Service</th>
+			    </tr>
+			  </thead>
+			  <tbody id="infolist">
+			 	
+			  </tbody>
+			</table>
+		</div>
+		<div style='text-align:center;padding:5px 0 10px;border-top:1px solid #eee;'>
+			<a class='btn' id='hostlink' target='_blank'>View Host Details</a>
+		</div>
+	</div>
+	<div class="needlogin" style='text-align:center;padding:5px 0 10px;border-top:1px solid #eee;display: none;'>
+		<a class='btn' id='hostlink' target='_blank' href="https://sso.telnet404.com/cas/login?service=https%3A%2F%2Fwww.zoomeye.org%2Flogin">Login Zoomeye</a>
+	</div>
+</body>
+</html>
