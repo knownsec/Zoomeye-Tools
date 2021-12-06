@@ -1,17 +1,7 @@
-
 div.host{
-  min-width: 300px;
+  min-width: 500px;
   width: 100%;
   margin: 5px;
-  margin-right: 0px;
-}
-
-div.loading{
-  min-width: 300px;
-  width: 100%;
-  height: 50px;
-  margin: 5px;
-  text-align: center;
   margin-right: 0px;
 }
 
@@ -19,119 +9,135 @@ div.loadingModel img {
   margin: 0 auto;
 }
 
-div.needlogin{
-  min-width: 300px;
-  margin: 5px;
-  margin-right: 0px;
+li{
+  display: inline-block;
+  list-style: none;
+  line-height: 20px;
+  color: rgba(24, 144, 255, 100);
+  font-size: 12px;
 }
 
-div.menumain{
-  min-width: 300px;
-  text-align: left;
-  width: 100%;
+ul{
+  display: inline-block;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.includeport{
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 7.5px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+}
+.showtails{
+  text-decoration: none;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 100);
+  font-size: 14px;
+}
+.blue{
+  margin-left: 30px;
+  color: rgba(74, 144, 226, 100);
+  font-size: 14px;
+}
+.city{
+  margin-left: 30px;
+  font-size: 15px;
+}
+.IP{
+  left: 205px;
+  top: 215px;
+  width: 89px;
+  height: 20px;
+  margin-left: 45px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+}
+.org{
+  margin-left: 65px;
+  font-size: 15px;
+}
+.isp{
+  margin-left: 72px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+}
+.IPtag{
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+}
+.sitetag{
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+}
+.citytag{
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+}
+.tag{
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+}
+.isptag{
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  margin-top: 7.5px;
+  margin-bottom: 0px;
+}
+.rcorners {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: rgba(230, 247, 255, 1);
+  border: 1px solid rgba(145, 213, 255, 1);
+  padding-left: 5px;
+  padding-right: 5px;
+  letter-spacing: 1px;
 }
 
-.menumain-list{
-  text-align: left;
-}
-
-.host h1,
-.host h2 {
-	color: #444;
-  	font-family: 'Myriad Pro', 'Helvetica';
-}
-
-.host > ul {
-  	list-style-type: none;
-  	margin-left: 0;
-}
-
-.host h1 {
-  	font-size: 18px;
-  	line-height: 18px;
-}
-
-.host h2 {
-  	font-size: 14px;
-  	line-height: 14px;
-}
-
-.host i {
-  	padding-right: 5px;
-}
-
-.host table {
-    font-size: 14px;
-}
-
-.host .hostnames{
-    color: #999;
-    font-size: 11px;
-    margin-left: 10px;
-}
-
-.host .ports li {
-  	background-color: #77CCD7;
-  	color: white;
-  	float: left;
-  	font-family: Arial;
-  	font-size: 12px;
-  	font-weight: bold;
-  	height: 48px;
-  	margin: 5px;
-  	position: relative;
-  	text-shadow: none;
-  	width: 48px;
-}
-
-.host .ports li > a {
-  background-color: #2d6987;
-  color: white;
-  height: 48px;
-  position: absolute;
-  width: 48px;
-}
-
-.host .ports li > a:hover {
-  background-color: #404040;
-}
-
-.host .ports li span {
-  color: white;
-  height: 34px;
-  position: absolute;
+.loading{
+  width: 80px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top:100px;
   text-align: center;
-  top: 30%;
-  width: 48px;
 }
-
-.host .ports li a > span:hover {
-  text-decoration: underline;
+.loading span{
+  display: inline-block;
+  width: 8px;
+  height: 100%;
+  border-radius: 4px;
+  background: rgb(134, 180, 241);
+  -webkit-animation: load 1s ease infinite;
 }
-
-.host table td,
-.host table th {
-  line-height: 8px;
+@-webkit-keyframes load{
+  0%,100%{
+      height: 40px;
+      background: rgb(73, 139, 224);
+  }
+  50%{
+      height: 70px;
+      margin: -15px 0;
+      background: rgb(173, 230, 225);
+  }
 }
-
-.host #vulns ul {
-	margin-top: 5px;
+.loading span:nth-child(2){
+  -webkit-animation-delay:0.2s;
 }
-
-.host #vulns ul li {
-	list-style-type: none;
-	margin-left: -20px;
+.loading span:nth-child(3){
+  -webkit-animation-delay:0.4s;
 }
-
-.host #vulns a {
-	color: black;
-	text-decoration: none;
+.loading span:nth-child(4){
+  -webkit-animation-delay:0.6s;
 }
-
-.host #vulns a:hover {
-	text-decoration: underline;
-}
-
-.host #vulns img {
-	width: 28px;
+.loading span:nth-child(5){
+  -webkit-animation-delay:0.8s;
 }

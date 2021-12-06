@@ -1,33 +1,34 @@
-# Zoomeye Tools
-
-Zoomeye Tools includes Zoomeye minitools and Zoomeye preview.
-
-Minitools is currently integrated for use in zoomeye.org, copy all targets in multiple formats, and enter the next scan in a convenient and quick way.
-
-Preview implements a simple Zoomeye interface. When a user login and clicks on preview, he can quickly and easily see various information of the current station ip and open port information.
 
 
+# ZoomEye Tools
 
-Zoomeye Tools包括Zoomeye minitools以及Zoomeye preview两个功能。
+ZoomEye Tools provides a variety of functions to assist the use of Zoomeye, including a proview host and many other functions
 
-minitools目前集成了针对zoomeye.org使用过程中，以多种格式复制所有目标，以方便快捷的方式进入下一步扫描。
+ZoomEye Tools provides three major functions:
+1、Simple proview function.
+You can get various information about the ip of the current webpage you visit through the browser plug-in. This is a simple and convenient way. If you want to view more information, you can refer to function 2.
 
-preview实现了一个简易的Zoomeye界面，当用户登录并点开preview时，可以方便快捷的看到当前站ip的各种信息以及开放端口信息。
+2、Detailed information function
+You can click to view details and search for details of the current page URL in ZoomEye
 
-详细开发文档见：
+3、ZoomEye search function
+You can quickly search the specified content in ZoomEye by selecting a piece of content, then clicking the right mouse button, and choosing to use ZoomEye to search.
 
-- [https://lorexxar.cn/2020/02/03/chrome-ext-3/](https://lorexxar.cn/2020/02/03/chrome-ext-3/)
+ZoomEye Tools 提供三个主要功能：
+1、简单的proview功能。
+你可以通过浏览器插件获得你访问的当前网页所在ip的各种信息，这是一个简单便捷的方式，如果你想查看更多信息，可以参考功能2。
+
+2、详细信息功能
+你可以通过点击查看详情，在ZoomEye中搜索当前页面URL的详细信息
+
+3、ZoomEye搜索功能
+你可以通过选中一段内容，之后点击鼠标右键，选择使用ZoomEye搜索，即可快速在ZoomEye中查询指定内容。
+
+
 
 Chrome网上应用商店：
 
-- [https://chrome.google.com/webstore/detail/zoomeye-tools/bdoaeiibkccgkbjbmmmoemghacnkbklj](https://chrome.google.com/webstore/detail/zoomeye-tools/bdoaeiibkccgkbjbmmmoemghacnkbklj)
+- https://chrome.google.com/webstore/detail/zoomeye-tools/bdoaeiibkccgkbjbmmmoemghacnkbklj
 
-# Usage
 
-打开chrome，点开扩展程序
 
-![image-20200806172056301](./docs/image-20200806172056301.png)
-
-点击加载已解压的扩展程序，选到该项目下，即可加载插件
-
-![image-20200806172200156](./docs/image-20200806172200156.png)
