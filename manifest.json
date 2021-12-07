@@ -1,38 +1,24 @@
 {
-	"name": "Zoomeye Tools",
-	"version": "0.2.0",
-	"manifest_version": 2,
-	"description": "Zoomeye Tools provides a variety of functions to assist the use of Zoomeye, including a proview host and many other functions",
-	"icons": {
-		"16": "img/16_16.png",
-		"48": "img/48_48.png",
-		"128": "img/128_128.png"
-	},
-	"background": {
-		"scripts": ["/js/jquery-3.4.1.js", "js/background.js"]
-	},
-	"content_scripts": [
-		{
-			"matches": ["*://*.zoomeye.org/*"],
-			"js": ["js/contentScript.js"],
-			"run_at": "document_end"
-		}
-	 ],
-	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
-	"browser_action": {
-		"default_icon": {
-			"19": "img/19_19.png",
-			"38": "img/38_38.png"
-		},
-		"default_title": "Zoomeye Tools",
-		"default_popup": "html/popup.html"
-	},
-	"permissions": [
-		"clipboardWrite",
-		"tabs",
-		"storage",
-		"activeTab",
-		"https://api.zoomeye.org/",
-		"https://*.zoomeye.org/"
-	]
+   "background": {
+      "scripts": [ "/js/jquery-3.4.1.js", "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "img/19_19.png",
+         "38": "img/38_38.png"
+      },
+      "default_popup": "html/popup.html",
+      "default_title": "ZoomEye"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+   "description": "ZoomEye Tools provides a variety of functions to assist the use of Zoomeye, including a proview host and many other functions",
+   "icons": {
+      "128": "img/128_128.png",
+      "16": "img/16_16.png",
+      "48": "img/48_48.png"
+   },
+   "manifest_version": 2,
+   "name": "ZoomEye Tools",
+   "permissions": ["tabs", "storage", "contextMenus","https://api.zoomeye.org/"],
+   "version": "0.3.2"
 }
