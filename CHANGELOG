@@ -1,0 +1,17 @@
+# Changelog
+
+
+
+## [0.3.2] - 2021-12-01
+
+### Add
+
+- 右键查询功能，目前支持ZoomEye和VirusTotal
+
+### Changed 
+
+- ZoomEye preview  优化显示界面，取消登录限制
+
+### Removed
+
+- ZoomEye minitools
