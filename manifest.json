@@ -20,5 +20,5 @@
    "manifest_version": 2,
    "name": "ZoomEye Tools",
    "permissions": ["tabs", "storage", "contextMenus","https://api.zoomeye.org/"],
-   "version": "0.3.2"
+   "version": "0.3.3"
 }
