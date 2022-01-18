@@ -112,7 +112,7 @@ window.onload = function () {
     }
 
     function isValIP(ip){
-        if((ip.match(/^(127|192)\./))){
+        if((ip.match(/^(127|192.168)\./))){
             return false;
         }
         else if(ip.match(/^(172\.(1[6-9]|2[0-9]|3[0-2]))/)){
